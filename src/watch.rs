@@ -150,6 +150,6 @@ fn emit(mux: &Arc<Mutex<BTreeSet<String>>>, args: &Args) {
 
 fn relativize(base: PathBuf, target: PathBuf) -> PathBuf {
     Path::strip_prefix(target.as_path(), base.as_path())
-        .unwrap_or_else(|_| panic!("Path no relative: {:?} and {:?}", base, target))
+        .unwrap_or_else(|_| panic!("Path not relative: {:?} and {:?}", base, target))
         .to_path_buf()
 }
