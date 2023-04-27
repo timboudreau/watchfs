@@ -451,7 +451,7 @@ fn print_help(err: bool) {
         err,
         "Generic file-watching with de-bouncing - runs a command on changes once quiescent.\n",
     );
-    println(err, format!("Usage: watchfs [{}|{}] [{}|{}] [{}|{} n] [{}|{} regex]\n               [{}|{}] [{}|{}] [{}|{}]\n               [{}|{}] [{}|{}] [{}|{} d] [{}|{}] command args...",
+    println(err, format!("Usage: watchfs [{}|{}] [{}|{}] [{}|{} n] [{}|{} regex]\n               [{}|{}] [{}|{}] [{}|{}]\n               [{}|{}] [{}|{}] [{}|{} d] [{}|{}]\n               command args...",
 VERBOSE_SHORT, VERBOSE_LONG, HELP_SHORT, HELP_LONG, SECONDS_SHORT, SECONDS_LONG, FILTER_SHORT, FILTER_LONG,
 PASS_CHANGED_PATHS_SHORT, PASS_CHANGED_PATHS_LONG, SHELL_SHORT, SHELL_LONG, RELATIVIZE_SHORT, RELATIVIZE_LONG,
 ONCE_SHORT, ONCE_LONG, NON_RECURSIVE_SHORT, NON_RECURSIVE_LONG, DIR_SHORT, DIR_LONG, EXIT_ON_ERROR_SHORT, EXIT_ON_ERROR_LONG));
@@ -524,7 +524,7 @@ ONCE_SHORT, ONCE_LONG, NON_RECURSIVE_SHORT, NON_RECURSIVE_LONG, DIR_SHORT, DIR_L
     );
     println(
         err,
-        " [2] - for detailed logging, set this RUST_LOG environment variable to one of info,\n       debug or trace.",
+        " [2] - for detailed logging, set the RUST_LOG environment variable to one of info,\n       debug or trace.",
     );
 
     println(err, "\nThe argument interpreter will assume that all arguments including and subsequent\nto the first argument which is not one of the above starts the command to run on changes.");

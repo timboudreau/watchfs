@@ -53,7 +53,7 @@ Arguments:
 
 
  [1] - regex syntax supported by https://docs.rs/regex/latest/regex/
- [2] - for detailed logging, set this RUST_LOG environment variable to one of info,
+ [2] - for detailed logging, set the RUST_LOG environment variable to one of info,
        debug or trace.
 
 The argument interpreter will assume that all arguments including and subsequent
