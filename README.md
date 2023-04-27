@@ -7,8 +7,9 @@ seconds.
 
 This can be used to, say, initiate `rsync` when something under a folder changes,
 with best-effort avoidance of invoking that command while files are being updated
-(think: a compilation job generating a flurry of changes - you don't want to react
-to each one, you want to react when it's *done*).
+(think: a compilation job or Save All in an IDE generating a flurry of changes - you
+don't want to react to each one, you want to react when files have stopped changing
+for a little while).
 
 I've seen this pattern many times in my career, and written it into various
 applications for various reasons at different times *because there was no generic
