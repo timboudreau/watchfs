@@ -452,9 +452,9 @@ fn print_help(err: bool) {
         "Generic file-watching with de-bouncing - runs a command on changes once quiescent.\n",
     );
     println(err, format!("Usage: watchfs [{}|{}] [{}|{}] [{}|{} n] [{}|{} regex]\n               [{}|{}] [{}|{}] [{}|{}]\n               [{}|{}] [{}|{}] [{}|{} d] [{}|{}]\n               command args...",
-VERBOSE_SHORT, VERBOSE_LONG, HELP_SHORT, HELP_LONG, SECONDS_SHORT, SECONDS_LONG, FILTER_SHORT, FILTER_LONG,
-PASS_CHANGED_PATHS_SHORT, PASS_CHANGED_PATHS_LONG, SHELL_SHORT, SHELL_LONG, RELATIVIZE_SHORT, RELATIVIZE_LONG,
-ONCE_SHORT, ONCE_LONG, NON_RECURSIVE_SHORT, NON_RECURSIVE_LONG, DIR_SHORT, DIR_LONG, EXIT_ON_ERROR_SHORT, EXIT_ON_ERROR_LONG));
+        VERBOSE_SHORT, VERBOSE_LONG, HELP_SHORT, HELP_LONG, SECONDS_SHORT, SECONDS_LONG, FILTER_SHORT, FILTER_LONG,
+        PASS_CHANGED_PATHS_SHORT, PASS_CHANGED_PATHS_LONG, SHELL_SHORT, SHELL_LONG, RELATIVIZE_SHORT, RELATIVIZE_LONG,
+        ONCE_SHORT, ONCE_LONG, NON_RECURSIVE_SHORT, NON_RECURSIVE_LONG, DIR_SHORT, DIR_LONG, EXIT_ON_ERROR_SHORT, EXIT_ON_ERROR_LONG));
 
     // println(err, "Usage: watchfs [-v|--verbose] [-h|--help] [-s|--seconds n] [-f|--filter regex]\n              [-p|--pass-changed-paths] [-l|--shell] [-r|--relativize-paths] \n              [-o|--once] [-n|--non-recursive] [-d|dir d] command args...",);
     println(err, "\nWatch a folder for file changes, and run some command after any change,\nonce a timeout has elapsed with no further changes.",);
