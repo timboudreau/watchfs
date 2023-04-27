@@ -1,0 +1,26 @@
+[package]
+name = "watchfs"
+description = """
+A simple cli utility to watch a directory and run an ad-hoc command, optionally passed the list of changed
+files (optionally relativized), after file changes have occurred in that folder (optionally matching a filter regex),
+after a quiescence delay - useful for things like triggering synchronizing files under edit between machines once
+a set of edits has been completed, so things like builds or git operations do not trigger storms of activity.
+"""
+version = "0.1.0"
+edition = "2021"
+authors = ["Tim Boudreau <tim@timboudreau.com>"]
+rust-version = "1.67"
+readme = "README.md"
+homepage = "https://github.com/timboudreau/watchfs"
+repository = "https://github.com/timboudreau/watchfs"
+license = "GPL-2.0-or-later"
+keywords = ["filesystem", "watch", "inotify", "unix", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+notify = "4.0.10"
+timer = "0.2.0"
+chrono = "0.4.24"
+log = "0.4.17"
+env_logger = "0.10.0"
+regex = "1.8.1"
